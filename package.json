@@ -1,0 +1,20 @@
+{
+  "name": "packagist-api-client",
+  "version": "1.0.0",
+  "description": "Packgist (PHP Package Repository) API client in JavaScript.",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": "git@github.com:moonmeister/packagist-api-client.git",
+  "author": "Alex Moon <alex.jared.moon@gmail.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "prettier": "^2.0.4",
+    "typescript": "^3.8.3"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "prepublish": "npm run build"
+  }
+}
