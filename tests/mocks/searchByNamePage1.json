@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "wp-graphql/wp-graphql",
+      "description": "GraphQL API for WordPress",
+      "url": "https://packagist.org/packages/wp-graphql/wp-graphql",
+      "repository": "https://github.com/wp-graphql/wp-graphql",
+      "downloads": 38083,
+      "favers": 2193
+    },
+    {
+      "name": "wp-graphql/wp-graphql-acf",
+      "description": "Advanced Custom Fields bindings for wp-graphql",
+      "url": "https://packagist.org/packages/wp-graphql/wp-graphql-acf",
+      "repository": "https://github.com/wp-graphql/wp-graphql-acf",
+      "downloads": 8376,
+      "favers": 195
+    }
+  ],
+  "total": 20,
+  "next": "https://packagist.org/search.json?q=wp-graphql\u0026page=2"
+}

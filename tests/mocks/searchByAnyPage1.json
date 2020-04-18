@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "humanmade/aws-ses-wp-mail",
+      "description": "WordPress plugin to send mail via SES",
+      "url": "https://packagist.org/packages/humanmade/aws-ses-wp-mail",
+      "repository": "https://github.com/humanmade/aws-ses-wp-mail",
+      "downloads": 5036,
+      "favers": 138
+    },
+    {
+      "name": "wordplate/mail",
+      "description": "A mail plugin for WordPlate",
+      "url": "https://packagist.org/packages/wordplate/mail",
+      "repository": "https://github.com/wordplate/mail",
+      "downloads": 9499,
+      "favers": 14
+    }
+  ],
+  "total": 34,
+  "next": "https://packagist.org/search.json?q=mail\u0026page=2\u0026tags%5B0%5D=wordpress\u0026type=wordpress-plugin"
+}

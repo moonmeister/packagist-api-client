@@ -54,23 +54,24 @@ interface IPackagistSearchResponseItem {
   repository: string;
   downloads: number;
   favers: number;
+  abandoned?: string;
 }
 
 /**
  * Checkout {@link https://packagist.org/apidoc#search-packages} for more info.
  */
 export async function search({
+  name,
   tags,
   type,
-  query,
 }: {
+  name: string;
   tags: string;
   type: string;
-  query: string;
 }): Promise<IPackagistSearchResponse> {
   return fetchPaginatedResult(
-    `https://packagist.org/search.json?${query ?? `q=${query}`}${type ?? `&type=${type}`}${
-      tags ?? `&tags=${tags}`
+    `https://packagist.org/search.json?${name ? `q=${name}` : ''}${type ? `&type=${type}` : ''}${
+      tags ? `&tags=${tags}` : ''
     }`
   );
 }
@@ -85,6 +86,7 @@ export async function searchByName(query: string): Promise<IPackagistSearchRespo
 /**
  * Checkout {@link https://packagist.org/apidoc#search-packages-by-tag} for more info.
  */
+//TODO: Support multiple tag search and in searchAny
 export async function searchByTag(tags: string): Promise<IPackagistSearchResponse> {
   return fetchPaginatedResult(`https://packagist.org/search.json?tags=${tags}`);
 }

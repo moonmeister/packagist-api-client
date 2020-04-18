@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "name": "m-inan/wp-graphql-next-previous-post",
+      "description": "WPGraphql Post type for next and previous field",
+      "url": "https://packagist.org/packages/m-inan/wp-graphql-next-previous-post",
+      "repository": "https://github.com/m-inan/wp-graphql-next-previous-post",
+      "downloads": 0,
+      "favers": 0
+    },
+    {
+      "name": "ashhitch/wp-graphql-homepage",
+      "description": "Query homepage and post post pages from reading settings with wp-graphql",
+      "url": "https://packagist.org/packages/ashhitch/wp-graphql-homepage",
+      "repository": "https://github.com/ashhitch/wp-graphql-homepage",
+      "downloads": 3,
+      "favers": 2
+    }
+  ],
+  "total": 20
+}
