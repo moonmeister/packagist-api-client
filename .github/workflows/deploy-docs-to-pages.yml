@@ -1,4 +1,4 @@
-name: Deply Docs to GH Pages
+name: Deploy Docs to GH Pages
 
 on:
   push:
