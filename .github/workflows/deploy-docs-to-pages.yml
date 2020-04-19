@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - 'src/**'
+      - 'README.md'
 
 jobs:
   publish-docs:
@@ -21,6 +22,8 @@ jobs:
         uses: borales/actions-yarn@v2.0.0
         with:
           cmd: build:docs
+      - name: Make routing work
+        run: touch docs/.nojekyll
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v1

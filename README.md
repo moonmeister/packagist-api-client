@@ -1,10 +1,12 @@
-# packagist-api-client
+Packagist (PHP Package Repository) API client written in TypeScript.
 
-Packgist (PHP Package Repository) API client in JavaScript.
+Should be browser and node compatible.
 
-## Docs
+## Links
 
-You'll find the docs at https://moonmeister.github.io/packagist-api-client
+[**Repositoy**](https://github.com/moonmeister/packagist-api-client)
+
+[**API Documentaion**](https://moonmeister.github.io/packagist-api-client)
 
 ## Contributing
 
