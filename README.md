@@ -1,5 +1,3 @@
-Packagist (PHP Package Repository) API client written in TypeScript.
-
 Should be browser and node compatible.
 
 ## Links
