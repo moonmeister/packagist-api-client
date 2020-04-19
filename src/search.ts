@@ -78,7 +78,6 @@ export async function searchByName(
  *
  * If you figure out how to do an 'AND' tag search please open an issue to let me know.
  */
-//TODO: Support multiple tag search and in search
 export async function searchByTag(
   tags: string | Array<string>,
   pageSize?: number
