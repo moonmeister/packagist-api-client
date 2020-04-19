@@ -8,7 +8,7 @@ on:
       - yarn.lock
 
 jobs:
-  publish:
+  run-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
