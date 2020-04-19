@@ -1,4 +1,4 @@
-name: Unit Tests
+name: Tests
 on:
   pull_request:
     paths:
@@ -8,7 +8,7 @@ on:
       - yarn.lock
 
 jobs:
-  run-tests:
+  unit-tests:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -20,4 +20,17 @@ jobs:
       - name: Test
         uses: borales/actions-yarn@v2.0.0
         with:
-          cmd: test
+          cmd: test:unit
+  formatting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - name: Check Formatting
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: test:format
