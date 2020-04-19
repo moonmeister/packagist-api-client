@@ -23,7 +23,7 @@ jobs:
         with:
           cmd: build:docs
       - name: Make routing work
-        run: touch docs/.nojekyll
+        run: sudo touch docs/.nojekyll
       - name: Deploy
         if: success()
         uses: crazy-max/ghaction-github-pages@v1
