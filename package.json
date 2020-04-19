@@ -24,7 +24,8 @@
     "prepare": "yarn build",
     "test:unit": "nyc mocha",
     "test:watch": "nyc mocha --watch --reporter min",
-    "test:format": "prettier -c ."
+    "test:format": "prettier -c .",
+    "clean": "rm -r dist && rm -r docs && rm -r coverage && rm -r .nyc_output"
   },
   "devDependencies": {
     "@types/chai": "^4.2.11",
