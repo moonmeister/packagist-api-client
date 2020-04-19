@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "mervick/emojionearea",
+      "description": "WYSIWYG-like EmojiOne Converter / Picker Plugin for jQuery",
+      "url": "https://packagist.org/packages/mervick/emojionearea",
+      "repository": "https://github.com/mervick/emojionearea",
+      "downloads": 33849,
+      "favers": 753
+    },
+    {
+      "name": "timoetting/kirby-color",
+      "description": "Kirby-Color is a color picker plugin for Kirby CMS v3.",
+      "url": "https://packagist.org/packages/timoetting/kirby-color",
+      "repository": "https://github.com/TimOetting/kirby-color",
+      "downloads": 1713,
+      "favers": 27
+    }
+  ],
+  "total": 114,
+  "next": "https://packagist.org/search.json?page=2\u0026type=plugin"
+}

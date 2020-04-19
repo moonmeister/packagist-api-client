@@ -1,0 +1,21 @@
+{
+  "results": [
+    {
+      "name": "gmostafa/php-graphql-client",
+      "description": "GraphQL client and query builder.",
+      "url": "https://packagist.org/packages/gmostafa/php-graphql-client",
+      "repository": "https://github.com/mghoneimy/php-graphql-client",
+      "downloads": 508967,
+      "favers": 52
+    },
+    {
+      "name": "ecodev/graphql-upload",
+      "description": "A middleware to support file uploads in GraphQL",
+      "url": "https://packagist.org/packages/ecodev/graphql-upload",
+      "repository": "https://github.com/Ecodev/graphql-upload",
+      "downloads": 70780,
+      "favers": 66
+    }
+  ],
+  "total": 220
+}

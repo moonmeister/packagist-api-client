@@ -1,0 +1,328 @@
+{
+  "package": {
+    "name": "moonmeister/wp-graphql-seopress",
+    "description": "Query SEOPress data with wp-graphql",
+    "time": "2020-01-18T09:24:48+00:00",
+    "maintainers": [
+      {
+        "name": "moonmeister",
+        "avatar_url": "https://www.gravatar.com/avatar/5e1dd24f9fe6f119bb5dc1e91e20d40d?d=identicon"
+      }
+    ],
+    "versions": {
+      "dev-admin-settings": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "dev-admin-settings",
+        "version_normalized": "dev-admin-settings",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "b40033156ae089cf8553ca3585ff4797bf8068a6"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/b40033156ae089cf8553ca3585ff4797bf8068a6",
+          "reference": "b40033156ae089cf8553ca3585ff4797bf8068a6",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/admin-settings",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-02-21T07:45:28+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.6.1"
+        },
+        "require-dev": {
+          "lucatume/wp-browser": "^2.2.",
+          "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+          "wp-coding-standards/wpcs": "^2.2",
+          "phpcompatibility/phpcompatibility-wp": "^2.0"
+        }
+      },
+      "dev-master": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "1b37d44a12cc86ac3c507f596b1df257ed7af0e3"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/1b37d44a12cc86ac3c507f596b1df257ed7af0e3",
+          "reference": "1b37d44a12cc86ac3c507f596b1df257ed7af0e3",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/master",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-02-21T05:35:49+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.6.1"
+        },
+        "require-dev": {
+          "lucatume/wp-browser": "^2.2.",
+          "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+          "wp-coding-standards/wpcs": "^2.2",
+          "phpcompatibility/phpcompatibility-wp": "^2.0"
+        }
+      },
+      "dev-dev": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "dev-dev",
+        "version_normalized": "dev-dev",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "aec5086ecb654fab8b3034a59f0d69eef8812f8a"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/aec5086ecb654fab8b3034a59f0d69eef8812f8a",
+          "reference": "aec5086ecb654fab8b3034a59f0d69eef8812f8a",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/dev",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-02-21T05:32:59+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.6.1"
+        },
+        "require-dev": {
+          "lucatume/wp-browser": "^2.2.",
+          "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+          "wp-coding-standards/wpcs": "^2.2",
+          "phpcompatibility/phpcompatibility-wp": "^2.0"
+        }
+      },
+      "v1.1.1": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "v1.1.1",
+        "version_normalized": "1.1.1.0",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "1b37d44a12cc86ac3c507f596b1df257ed7af0e3"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/1b37d44a12cc86ac3c507f596b1df257ed7af0e3",
+          "reference": "1b37d44a12cc86ac3c507f596b1df257ed7af0e3",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/v1.1.1",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-02-21T05:35:49+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.6.1"
+        },
+        "require-dev": {
+          "lucatume/wp-browser": "^2.2.",
+          "dealerdirect/phpcodesniffer-composer-installer": "^0.5.0",
+          "wp-coding-standards/wpcs": "^2.2",
+          "phpcompatibility/phpcompatibility-wp": "^2.0"
+        }
+      },
+      "v1.1.0": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "v1.1.0",
+        "version_normalized": "1.1.0.0",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "f7ef915be4af339ea9693117dc96dc96a17fadb0"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/f7ef915be4af339ea9693117dc96dc96a17fadb0",
+          "reference": "f7ef915be4af339ea9693117dc96dc96a17fadb0",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/v1.1.0",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-02-12T05:24:24+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.6.1"
+        }
+      },
+      "v1.0.2": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "v1.0.2",
+        "version_normalized": "1.0.2.0",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "61a062631417710e75962f3fea424aba3c43f1cd"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/61a062631417710e75962f3fea424aba3c43f1cd",
+          "reference": "61a062631417710e75962f3fea424aba3c43f1cd",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/v1.0.2",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-01-18T09:47:42+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.3.8"
+        }
+      },
+      "v1.0.1": {
+        "name": "moonmeister/wp-graphql-seopress",
+        "description": "Query SEOPress data with wp-graphql",
+        "keywords": [],
+        "homepage": "",
+        "version": "v1.0.1",
+        "version_normalized": "1.0.1.0",
+        "license": ["GPL-3.0-or-later"],
+        "authors": [
+          {
+            "name": "Alex Moon",
+            "email": "alex.jared.moon@gmail.com"
+          },
+          {
+            "name": "Ash Hitchcock",
+            "email": "hello@ashleyhitchcock.co.uk"
+          }
+        ],
+        "source": {
+          "type": "git",
+          "url": "https://github.com/moonmeister/wp-graphql-seopress.git",
+          "reference": "e8da898ee2bfca62e6476a088a4df1ab52e064f4"
+        },
+        "dist": {
+          "type": "zip",
+          "url": "https://api.github.com/repos/moonmeister/wp-graphql-seopress/zipball/e8da898ee2bfca62e6476a088a4df1ab52e064f4",
+          "reference": "e8da898ee2bfca62e6476a088a4df1ab52e064f4",
+          "shasum": ""
+        },
+        "type": "wordpress-plugin",
+        "support": {
+          "source": "https://github.com/moonmeister/wp-graphql-seopress/tree/v1.0.1",
+          "issues": "https://github.com/moonmeister/wp-graphql-seopress/issues"
+        },
+        "time": "2020-01-18T08:50:00+00:00",
+        "require": {
+          "wp-graphql/wp-graphql": ">=0.3.8",
+          "johnpbloch/wordpress": "^5.3"
+        }
+      }
+    },
+    "type": "wordpress-plugin",
+    "repository": "https://github.com/moonmeister/wp-graphql-seopress",
+    "github_stars": 3,
+    "github_watchers": 1,
+    "github_forks": 0,
+    "github_open_issues": 6,
+    "language": "PHP",
+    "dependents": 0,
+    "suggesters": 0,
+    "downloads": {
+      "total": 0,
+      "monthly": 0,
+      "daily": 0
+    },
+    "favers": 3
+  }
+}

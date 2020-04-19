@@ -1,0 +1,22 @@
+{
+  "results": [
+    {
+      "name": "webonyx/graphql-php",
+      "description": "A PHP port of GraphQL reference implementation",
+      "url": "https://packagist.org/packages/webonyx/graphql-php",
+      "repository": "https://github.com/webonyx/graphql-php",
+      "downloads": 5396570,
+      "favers": 3641
+    },
+    {
+      "name": "api-platform/core",
+      "description": "Build a fully-featured hypermedia or GraphQL API in minutes",
+      "url": "https://packagist.org/packages/api-platform/core",
+      "repository": "https://github.com/api-platform/core",
+      "downloads": 3448883,
+      "favers": 1525
+    }
+  ],
+  "total": 220,
+  "next": "https://packagist.org/search.json?page=2&tags%5B0%5D=graphql"
+}

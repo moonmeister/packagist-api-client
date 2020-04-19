@@ -1,0 +1,21 @@
+{
+  "packageNames": [
+    "0.0.0/composer-include-files",
+    "0.0.0/laravel-env-shim",
+    "0.0.1/try-make-package",
+    "0099ff/dialogflowphp",
+    "00f100/array_dot",
+    "00f100/cakephp-opauth",
+    "00f100/fcphp-autoload",
+    "00f100/fcphp-cache",
+    "00f100/fcphp-command",
+    "00f100/fcphp-context",
+    "00f100/fcphp-controller",
+    "00f100/fcphp-cookie",
+    "00f100/fcphp-crypto",
+    "00f100/fcphp-datasource",
+    "00f100/fcphp-datasource-mysql",
+    "00f100/fcphp-di",
+    "00f100/fcphp-dispach"
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "packageNames": [
+    "composer/ca-bundle",
+    "composer/composer",
+    "composer/installers",
+    "composer/satis",
+    "composer/semver",
+    "composer/spdx-licenses",
+    "composer/xdebug-handler"
+  ]
+}

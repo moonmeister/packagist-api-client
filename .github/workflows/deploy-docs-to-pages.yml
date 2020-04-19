@@ -8,7 +8,7 @@ on:
       - 'src/**'
 
 jobs:
-  publish:
+  publish-docs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
