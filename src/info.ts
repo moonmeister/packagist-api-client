@@ -15,7 +15,7 @@ interface IPackagistPackageVersionDetails {
   homepage: string;
   version: string;
   version_normalzed: string;
-  licese: [string];
+  license: [string];
   authors: [
     {
       name: string;

@@ -73,8 +73,8 @@ export async function searchByName(
 /**
  * Checkout {@link https://packagist.org/apidoc#search-packages-by-tag} for more info.
  *
- * If you would like to search by multiple tags pass an array of strings to the first paramater.
- * FYI: multiple tags are currenty tread as "OR" statements by the Packagist API.
+ * If you would like to search by multiple tags pass an array of strings to the first parameter.
+ * FYI: multiple tags are currently tread as "OR" statements by the Packagist API.
  *
  * If you figure out how to do an 'AND' tag search please open an issue to let me know.
  */
