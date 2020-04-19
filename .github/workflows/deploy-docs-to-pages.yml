@@ -1,6 +1,9 @@
 name: Deply Docs to GH Pages
 
-on: push
+on:
+  push:
+    branches:
+      - master
 
 jobs:
   publish:
