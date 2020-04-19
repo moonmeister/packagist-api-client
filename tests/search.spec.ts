@@ -1,16 +1,17 @@
-import { search, searchByTag, searchByType, searchByName } from '../src/index';
+import 'mocha';
 import { expect } from 'chai';
 import nock from 'nock';
 
-import 'mocha';
+import { search, searchByTag, searchByType, searchByName } from '../src/index';
 
 describe('Search', () => {
   describe('searchByName', () => {
-    let nextPage: Function;
-
     it('Pagination', async function () {
       nock('https://packagist.org')
-        .get('/search.json?q=wp-graphql')
+        .get('/search.json')
+        .query({
+          q: 'wp-graphql',
+        })
         .replyWithFile(200, __dirname + `/mocks/searchByNamePage1.json`, {
           'Content-Type': 'application/json',
         });
@@ -31,14 +32,29 @@ describe('Search', () => {
         expect(result2).not.to.have.key('next');
       }
     });
+
+    it('Pagination Page Size', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          q: 'wp-graphql',
+          per_page: 10,
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByNamePage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await searchByName('wp-graphql', 10);
+    });
   });
 
   describe('searchByTag', () => {
-    let nextPage: Function;
-
-    it('PAgination', async function () {
+    it('Pagination', async function () {
       nock('https://packagist.org')
-        .get('/search.json?tags=graphql')
+        .get('/search.json')
+        .query({
+          tags: 'graphql',
+        })
         .replyWithFile(200, __dirname + `/mocks/searchByTagPage1.json`, {
           'Content-Type': 'application/json',
         });
@@ -49,7 +65,11 @@ describe('Search', () => {
 
       if (result.next) {
         nock('https://packagist.org')
-          .get('/search.json?tags%5B0%5D=graphql&page=2')
+          .get('/search.json')
+          .query({
+            'tags[0]': 'graphql',
+            page: 2,
+          })
           .replyWithFile(200, __dirname + `/mocks/searchByTagPage2.json`, {
             'Content-Type': 'application/json',
           });
@@ -60,13 +80,43 @@ describe('Search', () => {
         expect(result2).not.to.have.key('next');
       }
     });
+
+    it('Pagination Page Size', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          tags: 'graphql',
+          per_page: 10,
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByTagPage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await searchByTag('graphql', 10);
+    });
+
+    it('Multi Tag Search', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          'tags[0]': 'graphql',
+          'tags[1]': 'wp-graphql',
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByTagPage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await searchByTag(['graphql', 'wp-graphql']);
+    });
   });
 
   describe('searchByType', () => {
-    let nextPage: Function;
     it('Pagination', async function () {
       nock('https://packagist.org')
-        .get('/search.json?type=plugin')
+        .get('/search.json')
+        .query({
+          type: 'plugin',
+        })
         .replyWithFile(200, __dirname + `/mocks/searchByTypePage1.json`, {
           'Content-Type': 'application/json',
         });
@@ -77,7 +127,11 @@ describe('Search', () => {
 
       if (result.next) {
         nock('https://packagist.org')
-          .get('/search.json?type=plugin&page=2')
+          .get('/search.json')
+          .query({
+            type: 'plugin',
+            page: 2,
+          })
           .replyWithFile(200, __dirname + `/mocks/searchByTypePage2.json`, {
             'Content-Type': 'application/json',
           });
@@ -88,12 +142,31 @@ describe('Search', () => {
         expect(result2).not.to.have.key('next');
       }
     });
+
+    it('Pagination Page Size', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          type: 'plugin',
+          per_page: 10,
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByTypePage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await searchByType('plugin', 10);
+    });
   });
 
   describe('search (any)', () => {
     it('Pagination', async function () {
       nock('https://packagist.org')
-        .get('/search.json?&q=mail&type=wordpress-plugin&tags=wordpress')
+        .get('/search.json')
+        .query({
+          q: 'mail',
+          type: 'wordpress-plugin',
+          tags: 'wordpress',
+        })
         .replyWithFile(200, __dirname + `/mocks/searchByAnyPage1.json`, {
           'Content-Type': 'application/json',
         });
@@ -103,7 +176,13 @@ describe('Search', () => {
       expect(result.next).to.be.a('function');
 
       nock('https://packagist.org')
-        .get('/search.json?&q=mail&type=wordpress-plugin&tags%5B0%5D=wordpress&page=2')
+        .get('/search.json')
+        .query({
+          q: 'mail',
+          type: 'wordpress-plugin',
+          'tags[0]': 'wordpress',
+          page: 2,
+        })
         .replyWithFile(200, __dirname + `/mocks/searchByAnyPage2.json`, {
           'Content-Type': 'application/json',
         });
@@ -114,6 +193,36 @@ describe('Search', () => {
         expect(result2).to.have.keys(['results', 'total']);
         expect(result2).not.to.have.key('next');
       }
+    });
+
+    it('Pagination Page Size', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          q: 'mail',
+          type: 'wordpress-plugin',
+          tags: 'wordpress',
+          per_page: 10,
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByAnyPage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await search({ name: 'mail', type: 'wordpress-plugin', tags: 'wordpress' }, 10);
+    });
+
+    it('Multi Tag Search', async function () {
+      nock('https://packagist.org')
+        .get('/search.json')
+        .query({
+          'tags[0]': 'wordpress',
+          'tags[1]': 'wp-graphql',
+        })
+        .replyWithFile(200, __dirname + `/mocks/searchByAnyPage1.json`, {
+          'Content-Type': 'application/json',
+        });
+
+      await searchByTag(['wordpress', 'wp-graphql']);
     });
   });
 });
