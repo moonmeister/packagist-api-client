@@ -19,7 +19,11 @@
   },
   "scripts": {
     "build": "tsc",
+    "build:docs": "typedoc --out docs src",
     "watch": "tsc -w",
     "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "typedoc": "^0.17.4"
   }
 }

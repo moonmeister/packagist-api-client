@@ -1,0 +1,26 @@
+name: Deply Docs to GH Pages
+
+on: push
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Install
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: install
+      - name: Build
+        uses: borales/actions-yarn@v2.0.0
+        with:
+          cmd: build:docs
+      - name: Deploy
+        if: success()
+        uses: crazy-max/ghaction-github-pages@v1
+        with:
+          target_branch: gh-pages
+          build_dir: docs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
